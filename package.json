@@ -1,0 +1,32 @@
+{
+  "name": "book-keeper",
+  "version": "1.0.0",
+  "description": "A web app to maintain record of books and performing basic CRUD application on them",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "mritunjay kumar mani",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.7.0",
+    "formidable": "^1.2.2",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^5.5.0",
+    "firebase": "^8.1.1",
+    "firebase-admin": "^9.4.1",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0"
+  }
+}
