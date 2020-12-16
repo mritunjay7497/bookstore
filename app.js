@@ -11,7 +11,7 @@ require('dotenv').config();     //To get values from environment variables of th
 // const gridFsStorage = require('multer-gridfs-storage');     //storage engine for multer to upload files directly to mongoDb
 // const grid = require('gridfs-stream');      //handles chunking of data
 // const methodOverride = require('method-override')       //
-
+const cors = require('cors');
 
 //import routes
 const categoryRoutes = require("./routes/category");
@@ -20,6 +20,9 @@ const bookRoutes = require("./routes/books");
 
 //app
 const app = express();
+
+//set up CORS
+app.use(cors());
 
 //connect to database
 mongoose.connect(process.env.DATABASE, {
