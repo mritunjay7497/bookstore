@@ -11,6 +11,6 @@ exports.create = (req,res) => {
                 error: errorHandler(err)
             });
         }
-        res.json({ data });
+        res.send({ data });
     });
 };
